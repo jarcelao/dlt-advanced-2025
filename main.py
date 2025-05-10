@@ -57,9 +57,7 @@ def jaffle_shop_data():
 pipeline = dlt.pipeline(
     pipeline_name="jaffle_shop_pipeline",
     destination="duckdb",
-    dataset_name="jaffle_shop",
-    dev_mode=True,
-    progress=dlt.progress.log(),
+    dataset_name="jaffle_shop"
 )
 
 
